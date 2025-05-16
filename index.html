@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Urbanisme Numérique</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Styles personnalisés pour l'urbanisme */
+        .bg-urban {
+            background-color: #2c3e50; /* Un gris bleuté foncé pour un thème urbain */
+        }
+        .text-urban-primary {
+            color: #3498db; /* Un bleu plus clair pour la couleur primaire */
+        }
+        .btn-urban-primary {
+            background-color: #3498db;
+            border-color: #3498db;
+        }
+        .btn-urban-primary:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+        .shadow-urban {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            opacity: 1;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-urban">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><strong>URBANISME NUMÉRIQUE</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">demander</a></li>
+                <li class="nav-item"><a class="nav-link" href="admin/index.html">Admin</a></li>
+                <li class="nav-item"><a class="nav-link" href="log.html">Connexion</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="text-white text-center py-5 bg-dark">
+    <h1>Bienvenue dans l'Urbanisme Numérique</h1>
+    <p>Explorez les outils et les informations pour un urbanisme moderne et efficace</p>
+</header>
+
+<div style="margin-top: 1px;" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/urban1.jpg" class="d-block w-100" alt="Urbanisme 1">
+        </div>
+        <div class="carousel-item">
+            <img src="img/urban2.jpg" class="d-block w-100" alt="Urbanisme 2">
+        </div>
+        <div class="carousel-item">
+            <img src="img/urban3.jpg" class="d-block w-100" alt="Urbanisme 3">
+        </div>
+        <div class="carousel-item">
+            <img src="img/urban4.jpg" class="d-block w-100" alt="Urbanisme 4">
+        </div>
+        <div class="carousel-item">
+            <img src="img/urban5.jpg" class="d-block w-100" alt="Urbanisme 5">
+        </div>
+        <div class="carousel-item">
+            <img src="img/urban6.jpg" class="d-block w-100" alt="Urbanisme 6">
+        </div>
+        <div class="carousel-item">
+            <img src="img/urban7.jpg" class="d-block w-100" alt="Urbanisme 7">
+        </div>
+        <div class="carousel-item">
+            <img src="img/urban8.jpg" class="d-block w-100" alt="Urbanisme 8">
+        </div>
+        <div class="carousel-item">
+            <img src="img/urban9.jpg" class="d-block w-100" alt="Urbanisme 9">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<section class="container my-5">
+    <h2 class="text-center mb-4 text-urban-primary">Projets Récents</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-urban">
+                <img src="img/project1.jpg" class="card-img-top" alt="Projet 1">
+                <div class="card-body">
+                    <h5 class="card-title">Aménagement du centre-ville</h5>
+                    <p class="card-text">Détails sur le projet d'aménagement du cœur de la ville.</p>
+                    <a href="./detail_projet.html" class="btn btn-outline-urban-primary">Voir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-urban">
+                <img src="img/project2.jpg" class="card-img-top" alt="Projet 2">
+                <div class="card-body">
+                    <h5 class="card-title">Extension du réseau de transport</h5>
+                    <p class="card-text">Informations sur la nouvelle phase d'extension du réseau de transport urbain.</p>
+                    <a href="./detail_projet.html" class="btn btn-outline-urban-primary">Voir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-urban">
+                <img src="img/project3.jpg" class="card-img-top" alt="Projet 3">
+                <div class="card-body">
+                    <h5 class="card-title">Réhabilitation des espaces verts</h5>
+                    <p class="card-text">Présentation du programme de réhabilitation des parcs et jardins municipaux.</p>
+                    <a href="./detail_projet.html" class="btn btn-outline-urban-primary">Voir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-urban">
+                <img src="img/project4.jpg" class="card-img-top" alt="Projet 4">
+                <div class="card-body">
+                    <h5 class="card-title">Nouveau plan de zonage</h5>
+                    <p class="card-text">Aperçu du nouveau plan de zonage urbain et de ses implications.</p>
+                    <a href="./detail_projet.html" class="btn btn-outline-urban-primary">Voir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-urban">
+                <img src="img/project5.jpg" class="card-img-top" alt="Projet 5">
+                <div class="card-body">
+                    <h5 class="card-title">Développement de logements sociaux</h5>
+                    <p class="card-text">Informations sur les initiatives de développement de logements abordables.</p>
+                    <a href="./detail_projet.html" class="btn btn-outline-urban-primary">Voir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-urban">
+                <img src="img/project6.jpg" class="card-img-top" alt="Projet 6">
+                <div class="card-body">
+                    <h5 class="card-title">Modernisation des infrastructures</h5>
+                    <p class="card-text">Détails sur les projets de modernisation des réseaux d'eau, d'électricité et de communication.</p>
+                    <a href="./detail_projet.html" class="btn btn-outline-urban-primary">Voir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5">
+    <h2 class="text-center mb-4 text-urban-primary">Recherche Urbaine</h2>
+    <form class="row g-3 mb-5">
+        <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Mot clé (projet, service...)">
+        </div>
+        <div class="col-md-2">
+            <select class="form-select">
+                <option selected>Catégorie</option>
+                <option>Planification Urbaine</option>
+                <option>Infrastructures</option>
+                <option>Environnement Urbain</option>
+                <option>Développement Économique</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <select class="form-select">
+                <option selected>Localisation</option>
+                <option>Centre-ville</option>
+                <option>Quartier Nord</option>
+                <option>Zone Industrielle</option>
+                <option>Périphérie</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-urban-primary w-100">Rechercher</button>
+        </div>
+    </form>
+    <p class="text-center">Résultats de la recherche urbaine affichés ici...</p>
+</section>
+
+<footer class="text-center text-white py-4 bg-urban mt-5">
+    <div class="mb-2">Suivez l'Urbanisme Numérique :</div>
+    <div class="social-icons">
+        <a href="#"> <img src="./icon/facebook.svg" alt="Facebook"> </a>
+        <a href="#"> <img src="./icon/envelope.svg" alt="Email"> </a>
+        <a href="#"> <img src="./icon/twitter.svg" alt="Twitter"> </a>
+        <a href="#"> <img src="./icon/linkedin.svg" alt="LinkedIn"> </a>
+    </div>
+    <p class="mt-3">&copy; 2025 Urbanisme Numérique - Tous droits réservés.</p>
+    <p>Votre plateforme pour un urbanisme innovant</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

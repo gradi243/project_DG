@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            position: relative;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            border-radius: 5px;
+        }
+        .btn-primary {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /* Animation de bordure */
+        .login-container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background: linear-gradient(45deg, #007bff, #6610f2, #e83e8c, #fd7e14, #198754, #007bff);
+            background-size: 400%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            z-index: -1;
+            border-radius: 8px;
+            animation: borderAnimation 8s linear infinite;
+        }
+
+        @keyframes borderAnimation {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        /* Styles personnalisés pour la navbar */
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #007bff !important; /* Important pour forcer la couleur si Bootstrap la surcharge */
+        }
+        .navbar-nav .nav-link {
+            color: #343a40 !important; /* Couleur de texte des liens */
+            padding: 0.5rem 1rem; /* Padding pour les liens */
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #e9ecef; /* Couleur de fond au survol */
+        }
+        /* Ajustement pour le bouton "Se Connecter" s'il doit être un bouton primaire */
+        .navbar-nav .btn-login {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin-left: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .navbar-nav .btn-login:hover {
+            background-color: #0056b3;
+        }
+
+        /* Enlever la marge du body ajoutée précédemment, Bootstrap gère déjà le padding de la navbar */
+        body > header {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="w-100"> <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-city"></i> URBANISATION
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto"> <li class="nav-item">
+                        <a class="nav-link btn-login" href="#">Se Connecter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="m.html">Demander</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">À Propos</a>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="login-container">
+            <h2>NUMÉRIQUE</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" class="form-control" id="password" placeholder="">
+                </div>
+               <a href="m.html"><button type="submit" class="btn btn-primary">Se Connecter</button></a> 
+            </form>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
